@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container", style="text-align:center">
+<h1>Description</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Client_ID</th>
+        <th>Name_of_the_dish</th>
+        <th>Price</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Preparation</th>
+
+
+    </tr>
+    </thead>
+            <tbody>
+            <tr>
+                <td th:text="${product.id}"></td>
+                <td th:text="${product.clientId}"></td>
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.price}"></td>
+                <td th:text="${product.type}"></td>
+                <td th:text="${product.description}"></td>
+                <td th:text="${product.preparation}"></td>
+            </tr>
+            </tbody>
+</table>
+
+</body>
+</html>

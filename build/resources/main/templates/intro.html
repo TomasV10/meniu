@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container", style="text-align:center">
+    <h1>Menu</h1>
+    <h2>Choose what type of dishes do you want to eat tonight</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th><a class="btn btn-warning" data-th-href="@{/mvc/products?type=MEAT}">
+            Meat-dishes</a></th>
+            <th><a class="btn btn-success" data-th-href="@{/mvc/products?type=POTATOES}">Potatoe-dishes</a></th>
+        </tr>
+        </thead>
+
+    </table>
+
+</body>
+</html>
