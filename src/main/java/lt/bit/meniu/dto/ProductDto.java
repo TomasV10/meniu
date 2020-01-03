@@ -1,18 +1,24 @@
 package lt.bit.meniu.dto;
 
+
+import lt.bit.meniu.entities.Product;
+import lt.bit.meniu.repositories.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class ProductDto {
+
     private int id;
     private String name;
     private double price;
     private String description;
     private String preparation;
     private String type;
-    private long clientId;
+    private int clientId;
 
     public ProductDto() {
     }
 
-    public ProductDto(int id, String name, double price, String description, String preparation, String type, long clientId) {
+    public ProductDto(int id, String name, double price, String description, String preparation, String type, int clientId) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -70,11 +76,11 @@ public class ProductDto {
         this.type = type;
     }
 
-    public long getClientId() {
+    public int getClientId() {
         return clientId;
     }
 
-    public void setClientId(long clientId) {
+    public void setClientId(int clientId) {
         this.clientId = clientId;
     }
 }

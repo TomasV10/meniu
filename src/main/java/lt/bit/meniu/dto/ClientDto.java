@@ -1,33 +1,26 @@
-package lt.bit.meniu.entities;
+package lt.bit.meniu.dto;
 
+import lt.bit.meniu.entities.Product;
 
-
-import lt.bit.meniu.dto.ClientDto;
-
-import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity
-@Table(name = "klientai")
-public class Client {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ClientDto {
     private int id;
-    @Column(name = "first_name")
     private String firstName;
-    @Column(name = "last_name")
     private String lastName;
-    @Column(name = "date_visited")
     private LocalDate dateVisited;
-    @OneToMany(mappedBy = "client",
-            cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY)
     private List<Product> products;
 
+    public ClientDto() {
+    }
 
-    public String getFirstName() {
-        return firstName;
+    public ClientDto(int id, String firstName, String lastName, LocalDate dateVisited, List<Product> products) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateVisited = dateVisited;
+        this.products = products;
     }
 
     public int getId() {
@@ -36,6 +29,10 @@ public class Client {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
@@ -66,13 +63,5 @@ public class Client {
         this.products = products;
     }
 
-    public ClientDto clientDto(){
-        return new ClientDto(
-            id,
-            firstName,
-            lastName,
-            dateVisited,
-            products
-        );
-    }
+
 }

@@ -1,15 +1,17 @@
 package lt.bit.meniu.controllers;
 
+import lt.bit.meniu.dto.ClientDto;
+import lt.bit.meniu.dto.ProductDto;
 import lt.bit.meniu.entities.Client;
+import lt.bit.meniu.entities.Product;
 import lt.bit.meniu.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
@@ -17,11 +19,8 @@ import org.springframework.web.servlet.view.RedirectView;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.sql.Driver;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -53,7 +52,6 @@ public class ClientController {
                 }
             }
         }
-
         if (size < 1) size = 10;
         if (page < 1) page = 1;
 
@@ -75,10 +73,36 @@ public class ClientController {
     }
 
 
-        @GetMapping("/{id}")
-        public Client getClient(Integer id){
-            return clientRepository.getOne(id);
-        }
+    @GetMapping("/{id}")
+    public ModelAndView getClientById(@PathVariable Integer id) {
+        ClientDto client = clientRepository.getOne(id).clientDto();
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("clientDescription");
+        modelAndView.addObject("client", client);
+        return modelAndView;
+    }
+
+    @RequestMapping("/newClient")
+    public String showNewProductPage(Model model) { //kliento sarasas ir tipu
+        ClientDto clientDto = new ClientDto();
+        model.addAttribute("clientDto", clientDto);
+        return "newClient";
+    }
+
+
+
+    @PostMapping(value = "/save",
+            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    RedirectView newPost(ClientDto clientDto) {
+        Client client = new Client();
+        client.setId(clientDto.getId());
+        client.setFirstName(clientDto.getFirstName());
+        client.setLastName(clientDto.getLastName());
+        client.setDateVisited(clientDto.getDateVisited());
+        client.setProducts(clientDto.getProducts());
+        clientRepository.save(client);
+        return new RedirectView ( "/mvc/client/list");
+    }
 
     @GetMapping("/delete")
     RedirectView deleteById(
@@ -91,5 +115,5 @@ public class ClientController {
         attributes.addAttribute("page", page);
         return new RedirectView("/mvc/client/list");
 
-        }
+    }
 }

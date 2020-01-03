@@ -2,23 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Clients</title>
+        <title>Client</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
               crossorigin="anonymous">
     </head>
     <body class="container">
         <h1>Clients</h1>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item" data-th-if="${clientPage.number > 0}"><a id="prev" class="page-link"
-                                                                               data-th-href="@{${url}(size=${clientPage.size},page=${clientPage.number})}">Previous</a>
-                </li>
-                <li class="page-item"><a id="next" class="page-link"
-                                         data-th-href="@{${url}(size=${clientPage.size},page=${clientPage.number+2})}">Next</a>
-                </li>
-            </ul>
-        </nav>
         <table class="table">
             <thead>
                 <tr>
@@ -26,20 +16,32 @@
                     <th>First-name</th>
                     <th>Last-name</th>
                     <th>Date-visited</th>
-                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="client : ${clientPage.content}">
+                <tr>
                     <td th:text="${client.id}"></td>
                     <td th:text="${client.firstName}"></td>
                     <td th:text="${client.lastName}"></td>
                     <td th:text="${client.dateVisited}"></td>
-                    <td>
-                        <a class="btn btn-danger"
-                           data-th-href="@{/mvc/client/delete(id=${client.id},size=${clientPage.size},page=${clientPage.number+1})}">Delete</a>
-                    </td>
                 </tr>
+            </tbody>
+        </table>
+        <h2>Orders by this client</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name-of-the-dish</th>
+                <th>Price</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="product : ${client.products}">
+                <td><span th:text="${product.name}">Name</span></td>
+                <td><span th:text="${product.price}">Price</span></td>
+                <td><span th:text="${product.type}">Type</span></td>
+            </tr>
             </tbody>
         </table>
         <a class="btn btn-info"
@@ -47,7 +49,10 @@
         <a class="btn btn-info"
            data-th-href="@{/mvc/client/newClient}">Create new client</a>
         <a class="btn btn-info"
-           data-th-href="@{/mvc/products}">Go to products menu</a>
+           data-th-href="@{/mvc/products}">Go to product menu</a>
+        <a class="btn btn-info"
+           data-th-href="@{/mvc/client/list}">Back to clients list</a>
+
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

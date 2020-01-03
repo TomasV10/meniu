@@ -1,47 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Meat dishes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body class="container">
-<h1>Meat dishes</h1>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title th:text="${title}"></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .red_bold{
+                 animation:1s blinker linear infinite;
+                -webkit-animation:1s blinker linear infinite;
+                -moz-animation:1s blinker linear infinite;
+                 font-weight:bold;
+                 color: red;
+                }
 
-<nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item" data-th-if="${productPage.number > 0}"><a id="prev" class="page-link" data-th-href="@{/mvc/products?(type=${productType},size=${productPage.size},page=${productPage.number})}">Previous</a></li>
-        <li class="page-item"><a id="next" class="page-link" data-th-href="@{/mvc/products?(type=${productType},size=${productPage.size},page=${productPage.number+2})}">Next</a></li>
-    </ul>
-</nav>
-<table class="table">
-    <thead>
-    <tr>
-        <th>Dish_ID</th>
-        <th>Ordered-by-Client-ID</th>
-        <th>Name-of-the-dish</th>
-        <th>Price</th>
-        <th>Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="mdishes : ${productPage.content}">
-        <td th:text="${mdishes.id}"></td>
-        <td th:text="${mdishes.client.id}"></td>
-        <td th:text="${mdishes.name}"></td>
-        <td th:text="${mdishes.price}"></td>
+                @-moz-keyframes blinker {
+                 0% { opacity: 1.0; }
+                 50% { opacity: 0.0; }
+                 100% { opacity: 1.0; }
+                 }
 
-        <td>
-            <a class="btn btn-danger"
-               data-th-href="@{/mvc/mdishes/delete(id=${mdishes.id},size=${productPage.size},page=${productPage.number+1})}">Delete</a>
-            <a class="btn btn-success"
-               data-th-href="@{/mvc/mdishes/edit-form(id=${mdishes.id})}">Edit</a>
-            <a class="btn btn-info"
-               data-th-href="@{/mvc/products/{id}(id=${mdishes.id})}">Preview</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
+                @-webkit-keyframes blinker {
+                 0% { opacity: 1.0; }
+                 50% { opacity: 0.0; }
+                 100% { opacity: 1.0; }
+                 }
 
-</body>
+                @keyframes blinker {
+                 0% { opacity: 1.0; }
+                 50% { opacity: 0.0; }
+                 100% { opacity: 1.0; }
+                 }
+            }
+        </style>
+    </head>
+    <body class="container">
+        <h1 th:text="${title}"></h1>
+        <div class="time" style="text-align:right">
+            <h3>Current date&time: </h3>
+            <h3 th:text="${time}"></h3>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item" data-th-if="${productPage.number > 0}"><a id="prev" class="page-link"
+                                                                                data-th-href="@{/mvc/products?(type=${productType},size=${productPage.size},page=${productPage.number})}">Previous</a>
+                </li>
+                <li class="page-item"><a id="next" class="page-link"
+                                         data-th-href="@{/mvc/products?(type=${productType},size=${productPage.size},page=${productPage.number+2})}">Next</a>
+                </li>
+                <li class="page-item"><a class="page-link"
+                                         data-th-href="@{/}">Back To Start</a></li>
+                <li class="page-item"><a class="page-link"
+                                         data-th-href="@{/logout}">LogOut</a></li>
+            </ul>
+        </nav>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Dish_ID</th>
+                    <th>Ordered-by-Client-ID</th>
+                    <th>Name-of-the-dish</th>
+                    <th>Price</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="product : ${productPage.content}">
+                    <td><img src="/images/kugelis" alt="" border=3 height=100 width=100></td>
+                    <td th:text="${product.id}"></td>
+                    <td th:text="${product.client.id}"></td>
+                    <td th:text="${product.name}"></td>
+                    <td th:text="${product.price}" class="red_bold"></td>
+                    <td th:text="${product.type}"></td>
+                    <td>
+                        <a class="btn btn-danger"
+                           data-th-href="@{/mvc/products/delete?(type=${product.type},id=${product.id},size=${productPage.size},page=${productPage.number+1})}">Delete</a>
+                        <a class="btn btn-success"
+                           data-th-href="@{/mvc/products/edit(type=${product.type},id=${product.id})}">Edit</a>
+                        <a class="btn btn-info"
+                           data-th-href="@{/mvc/products/{id}(id=${product.id})}">Preview</a>
+                        <a class="btn btn-info"
+                           data-th-href="@{/mvc/client/{id}(id=${product.client.id})}">Client Info</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-info"
+           data-th-href="@{/mvc/products/newProduct}">New</a>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,6 +1,8 @@
 package lt.bit.meniu.entities;
 
 import lt.bit.meniu.dto.ProductDto;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
 
@@ -21,7 +23,8 @@ public class Product {
     @Enumerated(EnumType.STRING)
     @Column(name = "type")
     private ProductType type;
-    @ManyToOne
+    @ManyToOne (fetch = FetchType.EAGER,
+    cascade = CascadeType.ALL)
     @JoinColumn(name="client_id", nullable=false)
     private Client client;
 
@@ -57,6 +60,22 @@ public class Product {
         this.price = price;
     }
 
+    public String getPreparation() {
+        return preparation;
+    }
+
+    public ProductType getType() {
+        return type;
+    }
+
+    public void setType(ProductType type) {
+        this.type = type;
+    }
+
+    public void setPreparation(String preparation) {
+        this.preparation = preparation;
+    }
+
     public Client getClient() {
         return client;
     }
@@ -64,6 +83,7 @@ public class Product {
     public void setClient(Client client) {
         this.client = client;
     }
+
 
     public static enum ProductType{
         MEAT,

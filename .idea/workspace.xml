@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b15b4b5-1e12-4aee-85d8-f2e3ee65bf68" name="Default Changelist" comment="" />
+    <list default="true" id="7b15b4b5-1e12-4aee-85d8-f2e3ee65bf68" name="Default Changelist" comment="Papildyta">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/configs/CustomAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/configs/LoginSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/dto/ClientDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/entities/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/models/ProductModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/repositories/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/kugelis" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/clientDescription.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/newClient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/newProduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/upload-file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/controllers/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/controllers/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/controllers/IntroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/controllers/IntroController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/controllers/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/dto/ProductDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/dto/ProductDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/entities/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/entities/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/entities/Product$ProductType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/entities/Product$ProductType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/lt/bit/meniu/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/clients.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/clients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/productDescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/productDescription.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/IntroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/meniu/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/clients.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/clients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/productDescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/productDescription.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,39 +84,22 @@
       </state>
     </system>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-110049969">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1USc5zYVyQsqU1IfQq0uLCsNrUA" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
@@ -68,18 +108,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dienynas" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\resources\static" />
+      <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\resources\static\images" />
+      <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\resources\static\styles" />
+      <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\resources\css" />
+      <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="lt.bit.meniu.repositories" />
       <recent name="lt.bit.meniu.controllers" />
+      <recent name="lt.bit.meniu.configs" />
+      <recent name="lt.bit.meniu.ann" />
       <recent name="lt.bit.meniu.entities" />
+      <recent name="lt.bit.meniu.repositories" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\resources\templates" />
@@ -87,27 +137,15 @@
       <recent name="C:\Users\tomas\IdeaProjects\meniu\src\main\java\lt\bit\meniu" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.MeniuApplication">
     <configuration name="MeniuApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="lt.bit.meniu.MeniuApplication" />
       <module name="meniu.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.bit.meniu.*" />
+          <option name="PATTERN" value="lt.bit.meniu.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,6 +169,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <list>
@@ -169,74 +208,154 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.3299532" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info active="true" anchor="right" id="Gradle" visible="true" weight="0.32979977" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Papildyta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Papildyta" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1174" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575985064981">
+    <state x="732" y="266" key="#Notifications" timestamp="1578043034087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="266" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1578043034087" />
+    <state x="1312" y="358" key="#Notifications/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576701362737" />
+    <state x="1174" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576319302865">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1174" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575985064981" />
+    <state x="1174" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576319302865" />
+    <state x="1486" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576683554029">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1486" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576683554029" />
+    <state x="2385" y="415" key="#com.intellij.ide.util.MemberChooser" timestamp="1576683099289">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2385" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576683099289" />
+    <state x="366" y="417" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576656368786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="366" y="417" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1576656368786" />
+    <state x="656" y="562" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576425964191" />
+    <state x="2310" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576323189289">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2310" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576323189289" />
+    <state x="284" y="221" key="CommitChangelistDialog2" timestamp="1578043313767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="284" y="221" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578043313767" />
+    <state x="508" y="297" key="CommitChangelistDialog2/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576701732167" />
     <state x="1250" y="354" key="DBNavigator.ProjectSettingsDialog" timestamp="1575987214212">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1250" y="354" key="DBNavigator.ProjectSettingsDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987214212" />
-    <state x="1500" y="454" key="FileChooserDialogImpl" timestamp="1575983452989">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="837" y="337" key="FileChooserDialogImpl" timestamp="1578043059121">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1500" y="454" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575983452989" />
-    <state width="3397" height="397" key="GridCell.Tab.0.bottom" timestamp="1575987496036">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="837" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578043059121" />
+    <state x="1500" y="454" key="FileChooserDialogImpl/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576594614393" />
+    <state x="842" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1578043110255">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="3397" height="397" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987496036" />
-    <state width="3397" height="397" key="GridCell.Tab.0.center" timestamp="1575987496036">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="842" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578043110255" />
+    <state x="726" y="225" key="Github.UntrackedFilesDialog" timestamp="1575994577388">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="3397" height="397" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987496036" />
-    <state width="3397" height="397" key="GridCell.Tab.0.left" timestamp="1575987496035">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="726" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575994577388" />
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom" timestamp="1578042905222">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="3397" height="397" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987496035" />
-    <state width="3397" height="397" key="GridCell.Tab.0.right" timestamp="1575987496036">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578042905222" />
+    <state width="3397" height="273" key="GridCell.Tab.0.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576701786697" />
+    <state width="1877" height="189" key="GridCell.Tab.0.center" timestamp="1578042905222">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="3397" height="397" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987496036" />
-    <state x="2192" y="463" key="SettingsEditor" timestamp="1575984936572">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1877" height="189" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578042905222" />
+    <state width="3397" height="273" key="GridCell.Tab.0.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576701786697" />
+    <state width="1877" height="189" key="GridCell.Tab.0.left" timestamp="1578042905222">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="189" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578042905222" />
+    <state width="3397" height="273" key="GridCell.Tab.0.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576701786697" />
+    <state width="1877" height="189" key="GridCell.Tab.0.right" timestamp="1578042905222">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578042905222" />
+    <state width="3397" height="273" key="GridCell.Tab.0.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576701786697" />
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1576661287346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576661287346" />
+    <state width="1674" height="489" key="GridCell.Tab.1.bottom/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576613895686" />
+    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1576661287346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576661287346" />
+    <state width="1674" height="489" key="GridCell.Tab.1.center/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576613895686" />
+    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1576661287346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576661287346" />
+    <state width="1674" height="489" key="GridCell.Tab.1.left/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576613895685" />
+    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1576661287346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576661287346" />
+    <state width="1674" height="489" key="GridCell.Tab.1.right/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576613895686" />
+    <state x="544" y="235" key="SettingsEditor" timestamp="1576744686918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="544" y="235" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576744686918" />
     <state x="2192" y="463" key="SettingsEditor/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575984936572" />
-    <state x="1416" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1575987071378">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578043230795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578043230795" />
+    <state x="790" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1576482090515">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576482090515" />
+    <state x="1416" y="523" key="com.intellij.ide.util.TipDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987071378" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578042884355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578042884354" />
+    <state x="428" y="439" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1576613227739">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1416" y="523" key="com.intellij.ide.util.TipDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1575987071378" />
+    <state x="428" y="439" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576613227739" />
+    <state x="342" y="140" key="new project wizard" timestamp="1576569644665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1576569644665" />
+    <state x="1426" y="328" key="refactoring.ChangeSignatureDialog" timestamp="1576528606982">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1426" y="328" key="refactoring.ChangeSignatureDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576528606982" />
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1576399318135">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576399318135" />
+    <state x="2302" y="611" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576597733053">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2302" y="611" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.3440.1400/3440.0.1920.1040@0.0.3440.1400" timestamp="1576597733053" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/ProductController.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/bit/meniu/controllers/ProductController.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
